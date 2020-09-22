@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS</title>
+</head>
+
+<script>
+// Edit your script here
+var start_data = '4,4,2,2';
+var direction_data = '1,4,1,3,2,3,2,4,1,0';
+
+var start_data_array = start_data.split(',');
+var direction_data_array = direction_data.split(','); 
+console.log(start_data_array);
+console.log(direction_data_array);
+
+var result =game(start_data_array, direction_data_array);
+console.log(result);
+function game(intputPosition,intputDirection){
+  var output =  [-1, -1 ];
+var xArray = intputPosition[0] - 1;
+var yArray = intputPosition[1] -1;
+var xPlace = intputPosition[2];
+var yPlace = intputPosition[3];
+var direct = 0;// 0 = north, 1 = east, 2 = south, 3 = west
+console.log('array size:[' + xArray + ',' + yArray + ']');
+console.log('start: [' + xPlace + ',' + yPlace + ']');
+
+  for (i = 0; i < intputDirection.length; i++) {
+  console.log("intputDirection[i]: " + intputDirection[i]);
+    
+    if (intputDirection[i] == 0) {
+
+				return  [ xPlace, yPlace];
+			}
+    
+}
+  
+  
+}
+
+
+
+<body>
+
+</body>
+</html>
