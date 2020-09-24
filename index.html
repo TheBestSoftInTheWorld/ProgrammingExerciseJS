@@ -127,16 +127,14 @@ for (i = 0; i < intputDirection.length; i++) {
 
 return;
 
-}
-
-
+  }
 
 
 
 
 function checkArray(xArray, yArray, xPlace, yPlace){
   if (0 > xPlace || 0 > yPlace || xArray < xPlace || yArray < yPlace) {
-    System.out.println('object falls off the table');
+    console.log('object falls off the table');
     return false;
   }
 
