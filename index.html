@@ -7,8 +7,12 @@
 </head>
 
 <script>
+
 // Edit your script here
-function toArray(start_data, direction_data){
+function toArray(){
+  var start_data = prompt("Set position data, excample: 4,4,2,2");
+  var direction_data = prompt("Set direction data, excample: 1,4,1,3,2,3,2,4,1,0");
+
   var start_data_array = start_data.split(',');
   var direction_data_array = direction_data.split(','); 
   console.log(start_data_array);
@@ -31,7 +35,7 @@ console.log('start: [' + xPlace + ',' + yPlace + ']');
 
 for (i = 0; i < intputDirection.length; i++) {
   console.log("intputDirection[i]: " + intputDirection[i]);
-  
+
   if (intputDirection[i] == 0) {
     console.log([ xPlace, yPlace]);
     return;
@@ -141,7 +145,11 @@ function checkArray(xArray, yArray, xPlace, yPlace){
 </script>
 
 <body>
-	test
-  <button onclick="toArray('4,4,2,2', '1,4,1,3,2,3,2,4,1,0')">Click me</button>test
+	<br><br>
+  <button onclick="toArray()">set input data</button>
+<br><br><br>
+Excample output:<br>
+   <img src="outputImage.jpg" alt="output" width="600"
+         height="800">
 </body>
 </html>
