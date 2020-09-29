@@ -10,7 +10,12 @@ If the simulation succeeded: The objects final position as two integers [x, y]. 
 
 Commands:
 
-The object always has a direction (north, east, south or west). A simulation always starts with direction north. North means that if the object sits on [2, 4] and moves forward one step, the object will now stand on [2, 3]. The commands are: 0 = quit simulation and print results to stdout 1 = move forward one step 2 = move backwards one step 3 = rotate clockwise 90 degrees (eg north to east) 4 = rotate counterclockwise 90 degrees (eg west to south)
+The object always has a direction (north, east, south or west). A simulation always starts with direction north. North means that if the object sits on [2, 4] and moves forward one step, the object will now stand on [2, 3]. The commands are:
+0 = quit simulation and print results to stdout
+1 = move forward one step 
+2 = move backwards one step 
+3 = rotate clockwise 90 degrees (eg north to east) 
+4 = rotate counterclockwise 90 degrees (eg west to south)
 
 Example:
 
